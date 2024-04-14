@@ -1,7 +1,7 @@
 # README.md - HandyBuddy App with React
 <br />
 
-Hi there, thanks for reading README.md, please see below structure of the contents. <a name="home">HOME</a>
+Hi there, thanks for reading README.md, please see below structure of the contents. <a name="home"></a>
 
 1. [Application introduction](#ch1)
 2. [Installation guide](#ch2)
