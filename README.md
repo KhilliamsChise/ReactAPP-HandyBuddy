@@ -1,4 +1,4 @@
-# README.md - HandyBuddy App with Vue.js
+# README.md - HandyBuddy App with React
 <br />
 
 Hi there, thanks for reading README.md, please see below structure of the contents. <a name="home">HOME</a>
