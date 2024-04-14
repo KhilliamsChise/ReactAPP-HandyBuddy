@@ -1,52 +1,32 @@
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
+//Our Main Application script
+
+import React from 'react';
 import HeadingBar from './Heading';
 import StickyFooter from './Footer';
-import MakingBoard from './MakingBoard';
-import PaperCard from './PaperCard';
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import MainApp from './MainApp';
+import About from './About';
 
 function App(){
 
-    const [paper, setPaper] = useState([]);
-
-    //hook the inputted contented object
-    function hookContentMB(contentInputObj) {
-        
-        setPaper(prevPaper => {
-           return [...prevPaper, contentInputObj];
-        })
-    }
-
-    //
-    function deletePaper(id) {
-        setPaper(prevPaper =>{
-           return prevPaper.filter((eachInputObj, index) => {
-                return index !== id;
-            })
-        })
-    }
-
     return(
+    <Router>
         <div className='app'>
-        <HeadingBar />
+            <HeadingBar />
+                <Routes> 
+                {/* Component area that can switch to different pages */}
+                    <Route path='/' element={<Home />}/>
+                    <Route path='/home' element={<Home />}/>
+                    <Route path='/jot' element={<MainApp />}/>
+                    <Route path='/about' element={<About />}/>
 
-        <MakingBoard propAddContent = {hookContentMB} /> {/*data in*/}
-            <div className='paperCardDisplayDiv'>
-            {
-                paper.map( (eachInputObj, index) => {
-                return <PaperCard 
-                        key={index}
-                        id={index}
-                        title={eachInputObj.title} 
-                        date={eachInputObj.dateMB} 
-                        content={eachInputObj.content} 
-                        pDelete={deletePaper} />
-                })
-            }
-            </div>
-        <StickyFooter />
+                </Routes>
+
+            <StickyFooter />
         </div>
+    </Router>
     )
 }
 

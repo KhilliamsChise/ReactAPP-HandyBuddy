@@ -1,3 +1,4 @@
+//Date component for users to input date
 import React, { useRef, useState } from 'react';
 
 const DatePicker = (props) => {

@@ -1,3 +1,5 @@
+//Heading navigation bar component from material-ui
+
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -12,8 +14,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import BeenhereIcon from '@mui/icons-material/Beenhere';
+import { Link } from "react-router-dom";
 
-const pages = ['Note & To-Do', 'About'];
+const pages = ['Home', 'Jot', 'About'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function HeadingBar() {
@@ -93,7 +96,8 @@ function HeadingBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+
+                  <Link class="nav-link active"  to={`/${page}`}>{page}</Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -124,7 +128,7 @@ function HeadingBar() {
                 onClick={clickedfn}
                 sx={{ my: 2, color: 'white', display: 'block'  }}
               >
-                {page}
+                <Link class="nav-link active"  to={`/${page}`}>{page}</Link>
               </Button>
             ))}
           </Box>
