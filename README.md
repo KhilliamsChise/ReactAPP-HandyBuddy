@@ -69,7 +69,7 @@ Paste your copied GitHub link to the search box and confirm.\
 
 Store your cloned project to your named folder.
 
-Please note it may have a prompt that needs your authorization through GitHub, and you can then authorize the permission.
+Please note it may have a prompt that needs your authorization through GitHub, and you can then authorize the permission.\
 ![image](https://github.com/UOA-CS732-SE750-Students-2024/cs732-assignment-KhilliamsChise/assets/114396691/a691bd29-ac96-4865-ac76-eadfc1691c24)
 
 \
@@ -77,7 +77,7 @@ Please note it may have a prompt that needs your authorization through GitHub, a
 
 **3. Open Project**
 \
-Suggest opening the project folder by manually opening a new VS Code folder so that you will not run the incorrect folder path.
+Suggest opening the project folder by manually opening a new VS Code folder so that you will not run the incorrect folder path.\
 ![image](https://github.com/UOA-CS732-SE750-Students-2024/cs732-assignment-KhilliamsChise/assets/114396691/eb6c5dfd-d093-474d-b19e-9cb31d81ea9a)
 
 
